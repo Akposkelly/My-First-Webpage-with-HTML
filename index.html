@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Peronal Page</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Page</h1>
+        <nav>
+            <a href="#about">Home</a> |
+            <a href="#about">About</a> |
+            <a href="#hobbies">Hobbies</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- 
+    * <h1>: this is the heading on the page and it is the biggest in size
+    * <a>: the Anchor tags. the 'href="#about"' means when clicked,scroll down to
+         the session with the ID 'about'. this represents the internal link
+
+    
+    Below is the "About Me" Session that will contact part of the checklist 
+    items like ***paragraphs***, ***images**, and ***external links**. we will
+    be using the <main> tag since its the core content of the website and serving
+    as the main page. And alongside it, a <section> tag, and i will be giving the 
+    session an 'id="about"' so that our navigation links from the homepage knows exactly where to go to.
+    -->
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                <img src="https://images.pexels.com/photos/14778139/pexels-photo-14778139.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Valley Image" width="200" align="left" style="margin-right: 15px;">
+
+                <br>
+               
+                Hi! I'm a Student learning HTML.<br><br>
+                I love building Web pages and learning new things.<br><br>
+                Visit my favourite website: <a href="https://facebook.com" target="_blank">My Facebook Homepage</a>.</p>
+
+            </p>
+
+        </section>
+        <br clear="left">
+
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <div align="left" style="width: 45%; float: left;">
+                 
+            <ul>
+                <li>Reading</li>
+                <li>Coding</li>
+                <li>Playing Guitar</li>
+            </ul>
+        </div>
+        <div align="left" style="width: 45%; float: left;">
+            <ol>
+                <li>Learn HTML</li>
+                <li>Learn CSS</li>
+                <li>Build Projects</li>
+            </ol>
+        </div>
+        </section>
+        
+        <br clear="left">
+        
+
+        <hr>
+
+        <section id="schedule">
+            <h2>My Weekly Schedule</h2>
+            <table border="1" width="100%" cellpadding="5" cellspacing="0">
+                <tr>
+                    <th>Day</th>
+                    <th>Activity</th>
+                    <th>Time</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Study HTML</td>
+                    <td>10:00 AM</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Practice Coding</td>
+                    <td>2:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Build Projects</td>
+                    <td>4:00 PM</td>
+                </tr>
+               
+            </table>
+        </section>
+
+        <br>
+
+        <hr>
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="#">
+
+                <!-- Number1: Text input for name -->
+                <p>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </p>
+
+                <!--  Number2: Email input -->
+                <p>
+            
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" placeholder="Enter your email">
+
+                </p>
+                <!-- Number3: Age input -->
+                <p>
+                    <label for="age">Age:</label><br>
+                    <input type="number" id="age" placeholder="Enter your age">
+                </p>
+                    <!-- Number4: Date input -->
+                <p>
+                    <label for="date">Date:</label><br>
+                    <input type="date" id="date">
+                </p>
+                    <!-- Number5: Radio button for Gender -->
+                <p>
+                    <label>Gender:</label><br>
+
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </p>
+                    <!-- Number6: Dropdown select Menu for Courses -->
+                <p>
+                    <label for="course">Courses:</label><br>
+                    <select id="course">
+                        <option value="">Choose a course</option>
+                        <option value="html">HTML5 Basics</option>
+                        <option value="css">CSS3 Design</option>
+                        <option value="javascript">JavaScript Introduction</option>
+                    </select>
+                </p>
+                    <!-- Number7: Checkbox for Subscription -->
+                <p>
+                    <input type="checkbox" id="subscribe" value="yes">
+                    <label for="subscribe">Yes, send me updates</label>
+                </p>
+                    <!-- Number8: Submit Button -->
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
+        </section>
+    </main>
+    <!-- the final semantic element required by the assignment -->
+    <footer>
+        <!-- The footer contains copyright information.
+         and it is the last comment that completes the checklist for the assignment
+          -->
+        <p>&copy; 2026 Personal Webpage Assignment.</p>
+    </footer>
+</body>
+</html>
